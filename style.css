@@ -6,6 +6,14 @@ h1, h2 {
   font-weight: normal;
 }
 
+.mySlides {
+  display: none;
+}
+
+p .ex1 {
+  margin-left: 250px;
+}
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
