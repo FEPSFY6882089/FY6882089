@@ -2,7 +2,7 @@ h1, h2 {
   font-family: calibri;
 }
 
-.normal-text {
+h2 .normal-text {
   font-weight: normal;
 }
 
