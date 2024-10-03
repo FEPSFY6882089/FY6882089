@@ -2,6 +2,10 @@ h1, h2 {
   font-family: calibri;
 }
 
+.normal-text {
+  font-weight: normal;
+}
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
