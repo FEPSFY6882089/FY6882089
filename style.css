@@ -1,5 +1,9 @@
-* {
-  font-family: calibri;
+h1, h2, h3 {
+  font-famiy: calibri;
+}
+
+p, li {
+  font-family: arial, sans-serif; 
 }
 
 body {
