@@ -31,13 +31,16 @@ body {
 
 table {
   border-collapse: collapse;
-  width: 30%;
+  width: 100%;
 }
 
-td, th {
-  border: 1px solid #dddddd;
+td {
   text-align: left;
   padding: 8px;
+}
+
+th {
+  text-align: left;
 }
 
 tr:nth-child(even) {
