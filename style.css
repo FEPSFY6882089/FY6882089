@@ -2,9 +2,18 @@ h1, h2, h3 {
   font-family: calibri;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 p {
   font-family: 'Baskerville Old Face', 'Times New Roman';
-  text-indent: 20px;
+  padding-left: 20px;
+}
+
+td {
+  font-family: 'Baskerville Old Face', 'Times New Roman';
 }
 
 body {
