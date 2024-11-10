@@ -72,3 +72,9 @@ tr:nth-child(even) {
   margin-top: 5px;
   display: block;
 }
+
+.in-text-citation a {
+  cursor: default;
+  color: black;
+  text-decoration: none;
+}
