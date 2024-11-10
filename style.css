@@ -8,7 +8,7 @@ img {
 }
 
 p {
-  font-family: 'Baskerville Old Face';
+  font-family: 'Baskerville Old Face', 'Times New Roman';
   max-width: 80ch;
 }
 
@@ -18,7 +18,7 @@ li {
 }
 
 td {
-  font-family: 'Baskerville Old Face';
+  font-family: 'Baskerville Old Face', 'Times New Roman';
 }
 
 body {
