@@ -12,6 +12,11 @@ p {
   max-width: 80ch;
 }
 
+li {
+  max-width: 80ch;
+  font-size: 15px;
+}
+
 td {
   font-family: 'Baskerville Old Face';
 }
