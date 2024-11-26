@@ -76,3 +76,13 @@ tr:nth-child(even) {
 .in-text-citation {
   color: black;
 }
+
+/*Link target highlight animation to indicate where the link has led to*/
+li:target {
+  animation: highlight 2.5s;
+}
+
+@keyframes highlight {
+  0% {background: #3e3d3d;}
+  100% {background: transparent;}
+}
