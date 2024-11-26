@@ -73,8 +73,6 @@ tr:nth-child(even) {
   display: block;
 }
 
-.in-text-citation a {
-  cursor: default;
+.in-text-citation {
   color: black;
-  text-decoration: none;
 }

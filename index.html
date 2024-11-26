@@ -52,10 +52,11 @@
       algorithms that allow both humans and computers to solve the cube and, after many years of
       evolution and optimisation, this has culminated in astonishingly fast times. This method of 
       solving the cube has proven success, for example, the current world record for the 3x3x3 is held
-      by Max Park (USA) and he was able to solve the cube in 3.13 seconds <a href="#WCA">(World Cube Association, 2024a)</a>
-      and the fastest average of 5 solves, held by Yiheng Wang (China), is 4.09 seconds (Word Cube
-      Association, 2024b). The algorithms themselves have led to different methods of solving the cube 
-      such as CFOP, ZZ, and ROUX which all have their own benefits and trade-offs.
+      by Max Park (USA) and he was able to solve the cube in 3.13 seconds (<a href="#WCAa" class="in-text-citation">
+      World Cube Association, 2024a</a>) and the fastest average of 5 solves, held by Yiheng Wang (China),
+      is 4.09 seconds (<a href="#WCAb" class="in-text-citation">Word Cube Association, 2024b</a>). The algorithms
+      themselves have led to different methods of solving the cube such as CFOP, ZZ, and ROUX which all 
+      have their own benefits and trade-offs.
     </p>
     
     <h3 id="Introduction">Introduction</h3>
@@ -64,12 +65,13 @@
       Firstly, there will be an explanation of the notation that is used to describe the turns that can 
       be done on the cube and how they relate to algorithms. Secondly, there will be a description of 
       the most common method for solving the cube (CFOP) and the algorithms that are used in this method
-      (J Perm, 2017). In addition to this, a basic introduction to the ZZ and ROUX methods and comparison
-      to CFOP will be given (J Perm, 2019). Furthermore, there will be an exploration of the algorithms 
-      that are used to get a computer to solve a Rubik’s Cube and some of the different mathematical 
-      concepts and fields that they link to. Finally, this article will also explain the evolution and 
-      optimisation of the algorithms and methods over time and how this has affected the speed at which 
-      people and computers have been able to solve the Rubik’s Cube.
+      (<a href="#J Perm, 2017" class="in-text-citation">J Perm, 2017</a>). In addition to this, a basic
+      introduction to the ZZ and ROUX methods and comparison to CFOP will be given
+      (<a href="#J Perm, 2019" class="in-text-citation">J Perm, 2019</a>). Furthermore, there will be an
+      exploration of the algorithms that are used to get a computer to solve a Rubik’s Cube and some of
+      the different mathematical concepts and fields that they link to. Finally, this article will also
+      explain the evolution and optimisation of the algorithms and methods over time and how this has
+      affected the speed at which people and computers have been able to solve the Rubik’s Cube.
     </p>
   
     <h3 id="Cube Notation">Cube Notation</h3>
@@ -81,7 +83,7 @@
     </p>
     <div class="figure-container">
       <img src="images/figure1.png" alt="Figure 1" class="figure">
-      <span class="figure-citation">Figure 1: Rubik’s Cube Notation (Struyf, 2024a)</span>
+      <span class="figure-citation">Figure 1: Rubik’s Cube Notation (<a href="#Struyf, 2024a" class="in-text-citation">Struyf, 2024a</a>)</span>
     </div>
     <p>
       The first row shows the different turns that can be done to each layer of the cube. Furthermore, the second
@@ -92,33 +94,35 @@
     
     <h3 id="CFOP">CFOP</h3>
     <p>
-      As mentioned earlier, CFOP (Cross F2L Orientation of the last layer Permutation of the last layer) is one of the most popular
-      methods for solving the Rubik’s Cube (J Perm, 2017). This is mainly due to the benefits that it has over other methods (see
-      “Method Comparisons” for more details). The CFOP method consists of four steps and all but the first include the usage of 
-      algorithms. The first step is to make a cross, the second is to fill in the remaining corner-edge pairs, and the final two 
-      steps are the orientation and permutation of the last two layers. The final three steps are usually abbreviated to F2L, OLL, 
-      and PLL respectively (Struyf, 2024b). As with the cube notation, it is much easier to visualise these steps than it is to 
-      describe them (see Figure 2). Note that in CFOP steps 2 and 3 are combined into 1 step (F2L).
+      As mentioned earlier, CFOP (<strong>C</strong>ross <strong>F</strong>2L <strong>O</strong>rientation of the last layer
+      <strong>P</strong>ermutation of the last layer) is one of the most popular methods for solving the Rubik’s Cube
+      (<a href="#J Perm, 2017" class="in-text-citation">J Perm, 2017</a>). This is mainly due to the benefits that it has over other
+      methods (see “Method Comparisons” for more details). The CFOP method consists of four steps and all but the first include the
+      usage of algorithms. The first step is to make a cross, the second is to fill in the remaining corner-edge pairs, and the final
+      two steps are the orientation and permutation of the last two layers. The final three steps are usually abbreviated to F2L, OLL,
+      and PLL respectively (<a href="#Struyf, 2024b" class="in-text-citation">Struyf, 2024b</a>). As with the cube notation, it is much easier
+      to visualise these steps than it is to describe them (see Figure 2). Note that in CFOP steps 2 and 3 are combined into 1 step (F2L).
     </p>
     <div class="figure-container">
       <img src="images/figure2.png" alt="Figure 2" class="figure">
-      <span class="figure-citation">Figure 2: CFOP Method Steps (J Perm, 2024)</span>
+      <span class="figure-citation">Figure 2: CFOP Method Steps (<a href="#J Perm, 2024" class="in-text-citation">J Perm, 2024</a>)</span>
     </div>
     <p>
       As you can gather from Figure 2, the CFOP method is relatively intuitive and simple for the average person to understand 
       and learn and therefore it has been widely used across the speedcubing community. It combines an intuitive start with the 
       cross, an intuitive continuation by solving the corner-edge pairs, and two algorithmic steps to finish the cube thus creating 
       something quite simple for humans to learn. However, despite its popularity, CFOP is not necessarily the best method for 
-      solving the Rubik’s Cube, but it is one of the most understandable for humans (J Perm, 2017). See the “Method Comparisons” 
-      and “Computer-based methods” sections for more detail on this.
+      solving the Rubik’s Cube, but it is one of the most understandable for humans (<a href="#J Perm, 2017" class="in-text-citation">J Perm, 2017</a>).
+      See the “Method Comparisons” and “Computer-based methods” sections for more detail on this.
     </p>
 
     <h3 id="Method Comparisons">Method Comparisons</h3>
     <p>
       As discussed before, there are three main methods that people use to solve the Rubik’s Cube and those are the following: CFOP, 
-      ROUX, and ZZ. In a video discussing this topic (J Perm, 2019), the author compares some important properties about each method.
-       Firstly, the properties compared are the average move count, move types, cube rotations, look ahead (the ability to anticipate 
-       the next moves/algorithms), and regrips. Figure 3 is my summary of the conclusions drawn in the video (J Perm, 2019).
+      ROUX, and ZZ. In a video discussing this topic (<a href="#J Perm, 2019" class="in-text-citation">J Perm, 2019</a>), the author compares some important properties about each method.
+      Firstly, the properties compared are the average move count, move types, cube rotations, look ahead (the ability to anticipate 
+      the next moves/algorithms), and regrips. Figure 3 is my summary of the conclusions drawn in the video
+      (<a href="#J Perm, 2019" class="in-text-citation">J Perm, 2019</a>).
     </p>
     <div class="figure-container">
       <img src="images/figure3.png" alt="Figure 3" class="figure">
@@ -134,9 +138,10 @@
     <h3 id="Computer-based Methods">Computer-based Methods</h3>
     <p>
       In addition to the many methods above, there are also computational methods that can solve a Rubik’s cube. An example of this,
-      is machine learning techniques. Some researchers were able to use reinforcement learning to achieve this (Agostinelli et al., 2019). 
-      Furthermore, the mathematical problem of a Rubik’s Cube relates to many fields such as cryptography and group theory (Polylog, 2022).
-      For example, the sheer number of states that the Rubik’s Cube can take makes it a very interesting combinatorial problem.
+      is machine learning techniques. Some researchers were able to use reinforcement learning to achieve this (<a href="#Agostinelli et al., 2019" class="in-text-citation">Agostinelli et al., 2019</a>).
+      Furthermore, the mathematical problem of a Rubik’s Cube relates to many fields such as cryptography and
+      group theory (<a href="#Polylog, 2022" class="in-text-citation">Polylog, 2022</a>). For example, the sheer number of states that the
+      Rubik’s Cube can take makes it a very interesting combinatorial problem.
     </p>
 
     <h3 id="Evolution & Optimisation">Evolution & Optimisation</h3>
@@ -144,41 +149,41 @@
       As mentioned above, there are some extremely impressive times that people are now getting on the Rubik’s Cube. For this to happen,
       there has been a lot of optimisations over the years. Hardware improvements (such as magnets) have had a considerable impact. However,
       this has been largely due to new algorithms and innovations for the methods that exist. For example, there is a new method that skips
-      OLL and goes straight to PLL from F2L and this is called ZBLL (Chubb, 2024). With this method the future of faster and faster times,
-      which may even result in more 3 second solves, seems to be becoming a reality.
+      OLL and goes straight to PLL from F2L and this is called ZBLL (<a href="#Chubb, 2024" class="in-text-citation">Chubb, 2024</a>). With this
+      method the future of faster and faster times, which may even result in more 3 second solves, seems to be becoming a reality.
     </p>
 
     <hr>
     <h3 id="References">References</h3>
     <ul>
-      <li id="WCA">Agostinelli, F. et al. (2019) ‘Solving the Rubik’s cube with deep reinforcement learning and search. Nature machine intelligence.’ <i>[Online]</i> 1 (8), pp. 356–363.</li>
+      <li id="Agostinelli et al., 2019">Agostinelli, F. et al. (2019) ‘Solving the Rubik’s cube with deep reinforcement learning and search. Nature machine intelligence.’ <i>[Online]</i> 1 (8), pp. 356–363.</li>
     </ul>
     <ul>
-      <li>Chubb, S (2024) <i>ZBLL Algorithms.</i> Available at: https://cubingapp.com/algorithms/ZBLL/ (Accessed: 27 October 2024).</li>
+      <li id="Chubb, 2024">Chubb, S (2024) <i>ZBLL Algorithms.</i> Available at: https://cubingapp.com/algorithms/ZBLL/ (Accessed: 27 October 2024).</li>
     </ul>
     <ul>
-      <li>J Perm (2017) <i>Why is CFOP the most popular speedcubing method?</i> 15 February. Available at: https://www.youtube.com/watch?v=q3IZumCzWZg&t=392s (Accessed: 27 October 2024).</li>
+      <li id="J Perm, 2017">J Perm (2017) <i>Why is CFOP the most popular speedcubing method?</i> 15 February. Available at: https://www.youtube.com/watch?v=q3IZumCzWZg&t=392s (Accessed: 27 October 2024).</li>
     </ul>
     <ul>
-      <li>J Perm (2019) <i>The BEST Speedcubing Method? [CFOP/ROUX/ZZ] Comparison.</i> 28 September. Available at: https://www.youtube.com/watch?v=QKK8J3JKWi4 (Accessed: 27 October 2024).</li>
+      <li id="J Perm, 2019">J Perm (2019) <i>The BEST Speedcubing Method? [CFOP/ROUX/ZZ] Comparison.</i> 28 September. Available at: https://www.youtube.com/watch?v=QKK8J3JKWi4 (Accessed: 27 October 2024).</li>
     </ul>
     <ul>
-      <li>J Perm (2024) <i>CFOP Speedsolving Method.</i> Available at: https://jperm.net/3x3/cfop (Accessed: 27 October 2024).</li>
+      <li id="J Perm, 2024">J Perm (2024) <i>CFOP Speedsolving Method.</i> Available at: https://jperm.net/3x3/cfop (Accessed: 27 October 2024).</li>
     </ul>
     <ul>
-      <li>Polylog (2022) <i>The trick that solves Rubik’s Cubes and breaks ciphers.</i> 5 February. Available at: https://www.youtube.com/watch?v=wL3uWO-KLUE (Accessed: 27 October 2024).</li>
+      <li id="Polylog, 2022">Polylog (2022) <i>The trick that solves Rubik’s Cubes and breaks ciphers.</i> 5 February. Available at: https://www.youtube.com/watch?v=wL3uWO-KLUE (Accessed: 27 October 2024).</li>
     </ul>
     <ul>
-      <li>Struyf, M. (2024a) <i>Cube Notation — Cube.Academy.</i> Available at: https://www.cube.academy/cube-notation (Accessed: 27 October 2024).</li>
+      <li id="Struyf, 2024a">Struyf, M. (2024a) <i>Cube Notation — Cube.Academy.</i> Available at: https://www.cube.academy/cube-notation (Accessed: 27 October 2024).</li>
     </ul>
     <ul>
-      <li>Struyf, M. (2024b) <i>How to Solve a Rubik's Cube — Cube.Academy.</i> Available at: https://www.cube.academy/how-to-solve-a-rubiks-cube (Accessed: 27 October 2024).</li>
+      <li id="Struyf, 2024b">Struyf, M. (2024b) <i>How to Solve a Rubik's Cube — Cube.Academy.</i> Available at: https://www.cube.academy/how-to-solve-a-rubiks-cube (Accessed: 27 October 2024).</li>
     </ul>
     <ul>
-      <li>World Cube Association (2024a) <i>Rankings | World Cube Association.</i> Available at: https://www.worldcubeassociation.org/results/rankings/333/single (Accessed: 27 October 2024).</li>
+      <li id="WCAa">World Cube Association (2024a) <i>Rankings | World Cube Association.</i> Available at: https://www.worldcubeassociation.org/results/rankings/333/single (Accessed: 27 October 2024).</li>
     </ul>
     <ul>
-      <li>World Cube Association (2024b) <i>Rankings | World Cube Association.</i> Available at: https://www.worldcubeassociation.org/results/rankings/333/average (Accessed: 27 October 2024).</li>
+      <li id="WCAb">World Cube Association (2024b) <i>Rankings | World Cube Association.</i> Available at: https://www.worldcubeassociation.org/results/rankings/333/average (Accessed: 27 October 2024).</li>
     </ul>
   </body>
   
