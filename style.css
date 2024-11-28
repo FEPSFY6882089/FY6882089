@@ -1,15 +1,21 @@
 h1, h2, h3 {
-  font-family: calibri;
+  font-family: 'Calibri';
 }
 
 img {
+  width: 800px;
   max-width: 100%;
   height: auto;
+  padding-bottom: 25px;
 }
 
 p {
   font-family: 'Baskerville Old Face', 'Times New Roman';
   max-width: 80ch;
+}
+
+#totalWordCount {
+  font-family: 'Baskerville Old Face', 'Times New Roman';
 }
 
 li {
@@ -75,6 +81,16 @@ tr:nth-child(even) {
 
 .in-text-citation {
   color: black;
+}
+
+button {
+  margin: 10px auto;
+  padding: 4px 4px;
+}
+
+video {
+  width: 800;
+  height: 450;
 }
 
 /*Link target highlight animation to indicate where the link has led to*/
