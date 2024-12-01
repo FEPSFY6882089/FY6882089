@@ -83,6 +83,15 @@ tr:nth-child(even) {
   color: black;
 }
 
+/*
+The links in the reference list do not appear as links so that they stay in the required format for the reference. However, if you hover
+over them you will be able to interact with them as with any other link.
+*/
+.reference-link {
+  text-decoration: none; 
+  color: black;
+}
+
 button {
   margin: 10px auto;
   padding: 4px 4px;
