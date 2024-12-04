@@ -98,9 +98,7 @@ button {
 }
 
 video {
-  width: 800;
-  height: 450;
-}
+  width: 40%;
 
 /*Link target highlight animation to indicate where the link has led to*/
 li:target {
