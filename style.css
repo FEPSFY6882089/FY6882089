@@ -100,6 +100,7 @@ button {
 
 video {
   width: 40%;
+}
 
 /*Link target highlight animation to indicate where the link has led to*/
 li:target {
