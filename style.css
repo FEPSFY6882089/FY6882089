@@ -68,8 +68,8 @@ tr:nth-child(even) {
 
 .figure {
   display: block;
-  margin: 0 auto;
-  width: 100%;
+  margin: 0;
+  width: 85%;
 }
 
 .figure-citation {
@@ -77,6 +77,7 @@ tr:nth-child(even) {
   text-align: center;
   margin-top: 5px;
   display: block;
+  width: 85%;
 }
 
 .in-text-citation {
